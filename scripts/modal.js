@@ -1,3 +1,15 @@
+// Gérer la soumission du formulaire
+form.addEventListener("submit", (event) => {
+  event.preventDefault(); // Empêcher le rechargement de la page
+
+  if (validateForm()) { // Valider le formulaire
+    console.log("Formulaire valide");
+    displayConfirmationMessage(); // Afficher le message de confirmation
+  } else {
+    console.log("Formulaire invalide");
+  }
+});
+
 // Éléments DOM
 const modalBg = document.querySelector(".bground"); // Élément d'arrière-plan de la modal
 const modalBtns = document.querySelectorAll(".modal-btn"); // Boutons pour ouvrir la modal
@@ -179,14 +191,3 @@ function displayConfirmationMessage() {
   modalContent.appendChild(closeButton);
 }
 
-// Gérer la soumission du formulaire
-form.addEventListener("submit", (event) => {
-  event.preventDefault(); // Empêcher le rechargement de la page
-
-  if (validateForm()) { // Valider le formulaire
-    console.log("Formulaire valide");
-    displayConfirmationMessage(); // Afficher le message de confirmation
-  } else {
-    console.log("Formulaire invalide");
-  }
-});
