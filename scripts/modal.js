@@ -6,6 +6,7 @@ const modalBtns = document.querySelectorAll(".modal-btn"); // Boutons pour ouvri
 const closeBtn = document.querySelector(".close"); // Bouton pour fermer la modal
 const editNav = document.getElementById("myTopnav"); // Élément de la barre de navigation
 const form = document.querySelector("form"); // Élément du formulaire pour la saisie utilisateur
+const modalContent = document.querySelector(".content"); // Contenu de la modal
 
 // Basculer le menu de navigation pour le design responsive
 editNav.addEventListener("click", () => {
