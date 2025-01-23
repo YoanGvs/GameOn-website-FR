@@ -1,5 +1,3 @@
-Voici le code avec uniquement les commentaires importants et utiles traduits en français :
-
 // Éléments DOM
 const modalBg = document.querySelector(".bground"); // Élément d'arrière-plan de la modal
 const modalBtns = document.querySelectorAll(".modal-btn"); // Boutons pour ouvrir la modal
