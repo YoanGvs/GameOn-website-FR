@@ -245,7 +245,7 @@ input[data-error]::after {
   width: 20px;
   height: 20px;
   border: 2px solid #279e7a;
-  border-radius: 50%;
+  border-radius: 50%; 
   text-indent: 29px;
   white-space: nowrap;
   position: absolute;
@@ -405,7 +405,7 @@ input[data-error]::after {
   font-size: 16px;
 }
 .hero-section {
-  min-height: 93vh;
+  /*min-height: 93vh;*/
   border-radius: 10px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);

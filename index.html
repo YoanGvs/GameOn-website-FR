@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
     <title>Reservation</title>
@@ -18,7 +18,7 @@
     </div>
     <div class="main-navbar">
       
-      <a href="#" class="active"><span>Accueil</span></a>
+      
       <a href="#"><span>Détails de l'évènement</span></a>
       <a href="#"><span>À propos</span></a>
       <a href="#"><span>Contact</span></a>
@@ -61,9 +61,8 @@
               action="index.html"
               method="get"
             >
-              <div
-                class="formData">
-                <label>Prénom</label><br>
+              <div class="formData">
+                <label for="first">Prénom</label><br>
                 <input
                   class="text-control"
                   type="text"
@@ -72,9 +71,8 @@
                   minlength="2"
                 /><br>
               </div>
-              <div
-                class="formData">
-                <label>Nom</label><br>
+              <div class="formData">
+                <label for="last">Nom</label><br>
                 <input
                   class="text-control"
                   type="text"
@@ -82,9 +80,8 @@
                   name="last"
                 /><br>
               </div>
-              <div
-                class="formData">
-                <label>E-mail</label><br>
+              <div class="formData">
+                <label for="email">E-mail</label><br>
                 <input
                   class="text-control"
                   type="email"
@@ -92,9 +89,8 @@
                   name="email"
                 /><br>
               </div>
-              <div
-                class="formData">
-                <label>Date de naissance</label><br>
+              <div class="formData">
+                <label for="birthdate">Date de naissance</label><br>
                 <input
                   class="text-control"
                   type="date"
@@ -104,7 +100,7 @@
               </div>
               <div
                 class="formData">
-                <label>À combien de tournois GameOn avez-vous déjà participé ?</label><br>
+                <label for="tournaments">À combien de tournois GameOn avez-vous déjà participé ?</label><br>
                 <input type="number" class="text-control" id="quantity" name="quantity" min="0" max="99">
               </div>
               <p class="text-label">A quel tournoi souhaitez-vous participer cette année ?</p>
