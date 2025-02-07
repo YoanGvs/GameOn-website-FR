@@ -18,12 +18,12 @@
     </div>
     <div class="main-navbar">
       
-      
+      <a href="#" class="active"><span>Accueil</span></a>
       <a href="#"><span>Détails de l'évènement</span></a>
       <a href="#"><span>À propos</span></a>
       <a href="#"><span>Contact</span></a>
       <a href="#"><span>Évènements passés</span></a>
-      <a href="#" class="icon" ">
+      <a href="javascript:void(0);" class="icon" onclick="editNav()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
@@ -60,9 +60,11 @@
               name="reserve"
               action="index.html"
               method="get"
+              onsubmit="return validate();"
             >
-              <div class="formData">
-                <label for="first">Prénom</label><br>
+              <div
+                class="formData">
+                <label>Prénom</label><br>
                 <input
                   class="text-control"
                   type="text"
@@ -71,8 +73,9 @@
                   minlength="2"
                 /><br>
               </div>
-              <div class="formData">
-                <label for="last">Nom</label><br>
+              <div
+                class="formData">
+                <label>Nom</label><br>
                 <input
                   class="text-control"
                   type="text"
@@ -80,8 +83,9 @@
                   name="last"
                 /><br>
               </div>
-              <div class="formData">
-                <label for="email">E-mail</label><br>
+              <div
+                class="formData">
+                <label>E-mail</label><br>
                 <input
                   class="text-control"
                   type="email"
@@ -89,8 +93,9 @@
                   name="email"
                 /><br>
               </div>
-              <div class="formData">
-                <label for="birthdate">Date de naissance</label><br>
+              <div
+                class="formData">
+                <label>Date de naissance</label><br>
                 <input
                   class="text-control"
                   type="date"
@@ -100,7 +105,7 @@
               </div>
               <div
                 class="formData">
-                <label for="tournaments">À combien de tournois GameOn avez-vous déjà participé ?</label><br>
+                <label>À combien de tournois GameOn avez-vous déjà participé ?</label><br>
                 <input type="number" class="text-control" id="quantity" name="quantity" min="0" max="99">
               </div>
               <p class="text-label">A quel tournoi souhaitez-vous participer cette année ?</p>
@@ -210,6 +215,6 @@
         Copyright 2014 - 2022, GameOn Inc.
       </p>
     </footer>
-    <script src="/scripts/modal.js"></script>
+    <script src="scripts/main.js"></script>
   </body>
 </html>
